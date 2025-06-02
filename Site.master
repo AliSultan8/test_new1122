@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+      <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      <form id="form1" runat="server">
+      <header><h1>School Management System</h1></header>
+      <nav>
+          <ul class="nav-menu">
+     <li><a href="QueryByRegion.aspx">Query By Region</a></li>
+     <li><a href="QueryByClass.aspx">Query By Class</a></li>
+     <li><a href="StudentsList.aspx">Students List</a></li>
+     <li><a href="TeachersBySubject.aspx">Subject Teachers</a></li>
+     <li><a href="AddStudent.aspx">Add Student</a></li>
+     <li><a href="AddTeacher.aspx">Add Teacher</a></li>
+     <li><a href="AddSubject.aspx" class="active">Add Subject</a></li>
+     <li><a href="AddGrade.aspx" class="active">Add Grade</a></li>
+     <li><a href="Index.aspx">Home</a></li>
+ </ul>
+      </nav>
+     
+    <div class="container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
